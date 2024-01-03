@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "183145026142",
+    "project_id": "raduandnunocaffe",
+    "storage_bucket": "raduandnunocaffe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183145026142:android:7a857a2ab6fb166b185acf",
+        "android_client_info": {
+          "package_name": "com.radu.raduandnunocaffe"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD3aMU8D8g9nxDhDUWxtTZsN5CJYF0HFNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

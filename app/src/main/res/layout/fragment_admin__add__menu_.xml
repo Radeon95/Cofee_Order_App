@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".Admin.Fragments.Admin_Add_Menu_Fragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background"
+        android:backgroundTint="@color/brown"
+        app:title=""
+        app:titleTextColor="@color/white">
+
+
+        <ImageButton
+            android:id="@+id/logOutBtn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginEnd="15dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/power_off" />
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/add_bg">
+
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="66dp"
+                android:layout_height="98dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/more" />
+
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgProduct"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                android:text="Add Coffee"
+                android:textAlignment="center"
+                android:textColor="@color/sub_brown"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="-10dp"
+                android:padding="5dp"
+                android:text="Add Coffee With Image"
+                android:textAlignment="center"
+                android:textColor="@color/brown" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl"
+        android:layout_marginTop="-40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:foregroundGravity="center"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/coffee_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="Coffee Name"
+                        android:inputType="text"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/brown"
+                        android:textColorHint="@color/brown"
+                        android:textSize="15sp" />
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/coffee_description"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:autofillHints="Coffee Description"-->
+<!--                        android:background="@drawable/edittext_bg"-->
+<!--                        android:hint="Coffee Description"-->
+<!--                        android:inputType="text"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:paddingStart="15dp"-->
+<!--                        android:paddingEnd="15dp"-->
+<!--                        android:textColor="@color/brown"-->
+<!--                        android:textColorHint="@color/brown"-->
+<!--                        android:textSize="15sp" />-->
+
+                    <EditText
+                        android:id="@+id/coffee_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="Quantity(ml)"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/brown"
+                        android:textColorHint="@color/brown"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/coffee_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/edittext_bg"
+                        android:hint="Coffee Price"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textColor="@color/brown"
+                        android:textColorHint="@color/brown"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/customizeSwitch"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:text="Customize available"
+                        android:textColor="@color/brown"
+                        android:textSize="15sp" />
+
+
+
+                    <TextView
+                        android:id="@+id/addCoffeeBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/login_btn_bg"
+                        android:fontFamily="@font/rubik_medium"
+                        android:gravity="center"
+                        android:padding="15dp"
+                        android:text="Add Coffee"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

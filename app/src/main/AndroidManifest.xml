@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.radu.raduandnunocaffe">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cofee_Order_App">
+        <activity
+            android:name="com.radu.raduandnunocaffe.Show_Order_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.OTPActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name="com.radu.raduandnunocaffe.User_Coffee_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.Coffee_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.Admin.Admin_Home_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.Forgot_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.Welcome_Screen_Activity"
+            android:exported="false" />
+        <activity
+            android:name="com.radu.raduandnunocaffe.Splash_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.radu.raduandnunocaffe.MainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>
