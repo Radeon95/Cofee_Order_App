@@ -48,7 +48,7 @@ class Show_Order_Details_Activity : AppCompatActivity() {
         binding!!.emailTv.text = email
         binding!!.orderDateTv.text = formatDate
         binding!!.mobileTv.text = mobile
-        binding!!.amountTv.text = "Rs.$amount"
+        binding!!.amountTv.text = "£ .$amount"
         binding!!.addressTv.text = address
     }
 

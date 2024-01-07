@@ -32,7 +32,7 @@
             android:id="@+id/bottomNavigationView"
             android:layout_marginRight="16dp"
             app:menu="@menu/admin_bottom_nav_menu"
-            android:background="@drawable/transparent_bg"/>
+            android:background="@drawable/trans_bg"/>
 
     </com.google.android.material.bottomappbar.BottomAppBar>
 
@@ -42,7 +42,7 @@
         android:id="@+id/fab"
         android:src="@drawable/add"
         android:backgroundTint="@color/brown"
-        app:tint="@color/white"
+        app:tint="@color/red"
         app:maxImageSize="65dp"
         android:scaleType="center"
         app:layout_anchor="@id/bottomAppBar"/>

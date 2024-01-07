@@ -70,7 +70,7 @@
                             android:layout_below="@id/coffeeName"
                             android:layout_marginStart="10dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Rs.120"
+                            android:text="£ .3.86"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -123,7 +123,7 @@
                                     android:textColor="@color/black" />
 
                                 <ImageView
-                                    android:id="@+id/sugarTypeIv"
+                                    android:id="@+id/sugar"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_marginStart="5dp"
@@ -134,7 +134,7 @@
 
 
                             <LinearLayout
-                                android:id="@+id/additionsLL"
+                                android:id="@+id/additions"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -155,7 +155,7 @@
                                     android:layout_marginStart="5dp"
                                     android:background="@android:color/transparent"
                                     android:padding="5dp"
-                                    android:src="@drawable/addition_cream_tint" />
+                                    android:src="@drawable/add_cream" />
 
 
                             </LinearLayout>
@@ -242,7 +242,7 @@
     <!--                android:layout_toEndOf="@id/imageView"-->
     <!--                android:fontFamily="@font/metropolis_regular"-->
     <!--                android:padding="3dp"-->
-    <!--                android:text="Rs.120"-->
+    <!--                android:text="£ .3.86"-->
     <!--                android:textColor="@color/black"-->
     <!--                android:textStyle="bold" />-->
 
@@ -255,7 +255,7 @@
     <!--                android:layout_alignParentEnd="true"-->
     <!--                android:layout_marginEnd="10dp"-->
     <!--                android:layout_toEndOf="@id/itemQuantityTv"-->
-    <!--                android:text="Rs.45.500"-->
+    <!--                android:text="£ .4.05"-->
     <!--                android:textAlignment="viewEnd"-->
     <!--                android:textColor="@color/black"-->
     <!--                android:textSize="18sp"-->

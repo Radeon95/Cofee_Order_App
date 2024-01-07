@@ -30,7 +30,7 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding!!.root)
         progressDialog = ProgressDialog(this)
-        progressDialog!!.setTitle("Please Wait........")
+        progressDialog!!.setTitle("Please Wait...")
         progressDialog!!.setCanceledOnTouchOutside(false)
         mAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()

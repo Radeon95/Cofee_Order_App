@@ -2,9 +2,9 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:state_checked="true"
-        android:drawable="@drawable/addition_ice_tint"/>
+        android:drawable="@drawable/add_ice"/>
 
     <item android:state_checked="false"
-        android:drawable="@drawable/addition_ice"/>
+        android:drawable="@drawable/ice_cub"/>
 
 </selector>

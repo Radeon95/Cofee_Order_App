@@ -87,7 +87,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/image"
-                    android:text="It's Great"
+                    android:text="Great"
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="30sp" />
@@ -125,7 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@id/linear"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="159dp"
             tools:listitem="@layout/raw_user_menu_item_" />
 
     </RelativeLayout>

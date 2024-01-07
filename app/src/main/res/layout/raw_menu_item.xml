@@ -30,7 +30,7 @@
             android:layout_toEndOf="@id/CoffeeImage"
             android:fontFamily="@font/metropolis_regular"
             android:text="Coffee name"
-            android:textColor="@color/sub_brown"
+            android:textColor="@color/brown"
             android:textSize="20sp" />
 
         <ImageButton

@@ -54,8 +54,8 @@ class Coffee_Details_Activity : AppCompatActivity() {
         }
         binding!!.coffeeName.text = coffeeName
         binding!!.coffeeNameTwo.text = coffeeName
-        binding!!.priceTv.text = "Rs.$coffeePrice"
-        binding!!.totalPriceTv.text = "Rs.$coffeePrice"
+        binding!!.priceTv.text = "£ $coffeePrice"
+        binding!!.totalPriceTv.text = "£ $coffeePrice"
         if (isCustomizeAvailable == "true") {
             binding!!.mainRl.visibility = View.VISIBLE
             binding!!.sugarMainRl.visibility = View.VISIBLE
@@ -76,7 +76,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             binding!!.radioGroup4.clearCheck()
             finalCost = finalCost + cost
             Quantity++
-            binding!!.totalPriceTv.text = "Rs.$finalCost"
+            binding!!.totalPriceTv.text = "£ $finalCost"
             binding!!.quantityTv.text = "" + Quantity
         }
         binding!!.btnDecrement.setOnClickListener {
@@ -86,7 +86,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             if (Quantity > 1) {
                 finalCost = finalCost - cost
                 Quantity--
-                binding!!.totalPriceTv.text = "Rs.$finalCost"
+                binding!!.totalPriceTv.text = "£ $finalCost"
                 binding!!.quantityTv.text = Quantity.toString()
             }
         }
@@ -98,7 +98,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             largeSizeChecked = false
             smallSizeCost = finalCost * 0.1
             finalSizeCost = finalCost + smallSizeCost
-            binding!!.totalPriceTv.text = "Rs.$finalSizeCost"
+            binding!!.totalPriceTv.text = "£ $finalSizeCost"
         }
         binding!!.mediumSizeRB.setOnClickListener {
             smallSizeChecked = false
@@ -108,7 +108,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             binding!!.radioGroup4.clearCheck()
             mediumSizeCost = finalCost * 0.2
             finalSizeCost = finalCost + mediumSizeCost
-            binding!!.totalPriceTv.text = "Rs.$finalSizeCost"
+            binding!!.totalPriceTv.text = "£ $finalSizeCost"
         }
         binding!!.largeSizeRB.setOnClickListener {
             smallSizeChecked = false
@@ -118,7 +118,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             binding!!.radioGroup4.clearCheck()
             largeSizeCost = finalCost * 0.3
             finalSizeCost = finalCost + largeSizeCost
-            binding!!.totalPriceTv.text = "Rs.$finalSizeCost"
+            binding!!.totalPriceTv.text = "£ $finalSizeCost"
         }
         binding!!.noSugarRB.setOnClickListener {
             highSugarChecked = false
@@ -129,7 +129,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (smallSizeChecked || mediumSizeChecked || largeSizeChecked) {
                     noSugarCost = finalCost * -0.1 //-10%
                     finalSugarCost = finalSizeCost + noSugarCost
-                    binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                    binding!!.totalPriceTv.text = "£ $finalSugarCost"
                     binding!!.radioGroup3.clearCheck()
                     binding!!.radioGroup4.clearCheck()
                     binding!!.noSugarRB.isChecked = true
@@ -144,7 +144,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 noSugarCost = finalCost * -0.1 //-10%
                 finalSugarCost = finalCost + noSugarCost
-                binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                binding!!.totalPriceTv.text = "£ $finalSugarCost"
             }
         }
         binding!!.smallSugarRB.setOnClickListener {
@@ -156,7 +156,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (smallSizeChecked || mediumSizeChecked || largeSizeChecked) {
                     smallSugarCost = finalCost * 0.01 //-10%
                     finalSugarCost = finalSizeCost + smallSugarCost
-                    binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                    binding!!.totalPriceTv.text = "£ $finalSugarCost"
                     binding!!.radioGroup3.clearCheck()
                     binding!!.radioGroup4.clearCheck()
                     binding!!.smallSugarRB.isChecked = true
@@ -171,7 +171,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 smallSugarCost = finalCost * 0.01 //-10%
                 finalSugarCost = finalCost + smallSugarCost
-                binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                binding!!.totalPriceTv.text = "£ $finalSugarCost"
             }
         }
         binding!!.mediumSugarRB.setOnClickListener {
@@ -183,7 +183,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (smallSizeChecked || mediumSizeChecked || largeSizeChecked) {
                     mediumSugarCost = finalCost * 0.02 //-10%
                     finalSugarCost = finalSizeCost + mediumSugarCost
-                    binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                    binding!!.totalPriceTv.text = "£ $finalSugarCost"
                     binding!!.radioGroup3.clearCheck()
                     binding!!.radioGroup4.clearCheck()
                     binding!!.mediumSugarRB.isChecked = true
@@ -198,7 +198,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 mediumSugarCost = finalCost * 0.02 //-10%
                 finalSugarCost = finalCost + mediumSugarCost
-                binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                binding!!.totalPriceTv.text = "£ $finalSugarCost"
             }
         }
         binding!!.highSugarRB.setOnClickListener {
@@ -210,7 +210,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (smallSizeChecked || mediumSizeChecked || largeSizeChecked) {
                     highSugarCost = finalCost * 0.03 //-10%
                     finalSugarCost = finalSizeCost + highSugarCost
-                    binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                    binding!!.totalPriceTv.text = "£ $finalSugarCost"
                     binding!!.radioGroup3.clearCheck()
                     binding!!.radioGroup4.clearCheck()
                     binding!!.highSugarRB.isChecked = true
@@ -225,7 +225,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 highSugarCost = finalCost * 0.03 //-10%
                 finalSugarCost = finalCost + highSugarCost
-                binding!!.totalPriceTv.text = "Rs.$finalSugarCost"
+                binding!!.totalPriceTv.text = "£ $finalSugarCost"
             }
         }
         binding!!.additionCreamRB.setOnClickListener {
@@ -233,7 +233,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (noSugarChecked || smallSugarChecked || mediumSugarChecked || highSugarChecked) {
                     additionalCreamCost = finalCost * 0.05
                     finalAdditionalCost = finalSugarCost + additionalCreamCost
-                    binding!!.totalPriceTv.text = "Rs.$finalAdditionalCost"
+                    binding!!.totalPriceTv.text = "£ $finalAdditionalCost"
                     binding!!.radioGroup4.clearCheck()
                     binding!!.additionCreamRB.isChecked = true
                 } else {
@@ -247,7 +247,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 additionalCreamCost = finalCost * 0.05 //-10%
                 finalAdditionalCost = finalSugarCost + additionalCreamCost
-                binding!!.totalPriceTv.text = "Rs.$finalAdditionalCost"
+                binding!!.totalPriceTv.text = "£ $finalAdditionalCost"
             }
         }
         binding!!.additionalStickerRB.setOnClickListener {
@@ -255,7 +255,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
                 if (noSugarChecked || smallSugarChecked || mediumSugarChecked || highSugarChecked) {
                     additionalStickerCost = finalCost * 0.01
                     finalAdditionalCost = finalSugarCost + additionalStickerCost
-                    binding!!.totalPriceTv.text = "Rs.$finalAdditionalCost"
+                    binding!!.totalPriceTv.text = "£ $finalAdditionalCost"
                     binding!!.radioGroup4.clearCheck()
                     binding!!.additionalStickerRB.isChecked = true
                 } else {
@@ -269,7 +269,7 @@ class Coffee_Details_Activity : AppCompatActivity() {
             } else {
                 additionalStickerCost = finalCost * 0.01
                 finalAdditionalCost = finalSugarCost + additionalStickerCost
-                binding!!.totalPriceTv.text = "Rs.$finalAdditionalCost"
+                binding!!.totalPriceTv.text = "£ $finalAdditionalCost"
             }
         }
     }

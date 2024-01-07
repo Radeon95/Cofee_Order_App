@@ -80,7 +80,7 @@ class CartFragment() : Fragment() {
         progressDialog!!.setMessage("Saving order...")
         progressDialog!!.show()
         val timestamp = "" + System.currentTimeMillis()
-        val TotalCost = binding!!.totalPriceCount.text.toString().replace("Rs.", "")
+        val TotalCost = binding!!.totalPriceCount.text.toString().replace("£.", "")
         val userdata = HashMap<String, Any?>()
         userdata["username"] = username
         userdata["email"] = email
@@ -165,7 +165,7 @@ class CartFragment() : Fragment() {
                             val finalPrice = "" + ds.child("finalPrice").value
                             val value = java.lang.Double.valueOf(finalPrice)
                             TotalPrice += value
-                            binding!!.totalPriceCount.text = ("Rs. $TotalPrice").toString()
+                            binding!!.totalPriceCount.text = ("£. $TotalPrice").toString()
                         }
                     } else {
                         binding!!.totalPriceCount.visibility = View.GONE

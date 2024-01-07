@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@color/view_color"
     tools:context=".Admin.Fragments.Admin_Add_Menu_Fragment">
 
     <androidx.appcompat.widget.Toolbar
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/background"
-        android:backgroundTint="@color/brown"
+        android:backgroundTint="@color/view_color"
         app:title=""
         app:titleTextColor="@color/white">
 
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="210dp"
         android:layout_below="@id/toolbar"
-        android:background="@drawable/add_bg">
+        android:background="@drawable/bkg">
 
 
 
@@ -127,8 +127,8 @@
                         android:padding="10dp"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
-                        android:textColor="@color/brown"
-                        android:textColorHint="@color/brown"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
                         android:textSize="15sp" />
 
 <!--                    <EditText-->
@@ -159,8 +159,8 @@
                         android:padding="10dp"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
-                        android:textColor="@color/brown"
-                        android:textColorHint="@color/brown"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
                         android:textSize="15sp" />
 
                     <EditText
@@ -174,8 +174,8 @@
                         android:padding="10dp"
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
-                        android:textColor="@color/brown"
-                        android:textColorHint="@color/brown"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
                         android:textSize="15sp" />
 
                     <androidx.appcompat.widget.SwitchCompat
@@ -187,7 +187,7 @@
                         android:paddingStart="15dp"
                         android:paddingEnd="15dp"
                         android:text="Customize available"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textSize="15sp" />
 
 

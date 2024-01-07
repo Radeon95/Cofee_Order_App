@@ -43,7 +43,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
                 android:scaleType="fitEnd"
-                android:src="@drawable/logo" />
+                android:src="@drawable/log" />
 
 
         </RelativeLayout>
@@ -81,7 +81,7 @@
                 android:layout_below="@id/welcomeTv"
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/rubik_regular"
-                android:text="Hello there, sign in to continue!"
+                android:text="Hello, sign in to continue!"
                 android:textColor="@color/brown"
                 android:textSize="14sp" />
 
@@ -153,7 +153,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:fontFamily="@font/rubik_medium"
-                    android:gravity="end"
+                    android:gravity="start"
                     android:text="Forgot Password?"
                     android:textColor="@color/brown"
                     android:textSize="14sp" />
@@ -194,12 +194,12 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/log"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COFFEE HUB"
+            android:text="COFFEE PLACE"
             android:textColor="@color/brown"
             android:singleLine="true"
             android:textSize="14sp"

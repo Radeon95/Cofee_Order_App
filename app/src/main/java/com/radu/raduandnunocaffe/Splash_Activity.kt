@@ -25,7 +25,7 @@ class Splash_Activity : AppCompatActivity() {
         setContentView(binding!!.root)
         mAuth = FirebaseAuth.getInstance()
         database = FirebaseDatabase.getInstance()
-        val text = "COFFEE HUB"
+        val text = "COFFEE PLACE"
         val ss = SpannableString(text)
         val fcsBlue = ForegroundColorSpan(resources.getColor(R.color.black))
         val fcsYellow = ForegroundColorSpan(resources.getColor(R.color.brown))

@@ -35,7 +35,7 @@ class ShowOrdersAdapter(var context: Context, var ordersList: ArrayList<OrdersMo
         holder.emailTv.text = email
         holder.orderDateTv.text = formatDate
         holder.orderIdTv.text = orderDate
-        holder.amountTv.text = "Rs.$amount"
+        holder.amountTv.text = "£ .$amount"
         holder.itemView.setOnClickListener {
             val intent = Intent(context, Show_Order_Details_Activity::class.java)
             intent.putExtra("username", username)

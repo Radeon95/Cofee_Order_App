@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="@color/background"
-        android:backgroundTint="@color/brown"
+        android:backgroundTint="@color/view_color"
         app:title="My Profile"
         app:titleTextColor="@color/white">
 
@@ -57,7 +57,7 @@
                 android:id="@+id/image"
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:src="@drawable/card_bg_one"
+                android:src="@drawable/bkg"
                 android:scaleType="centerCrop"/>
 
 
@@ -79,7 +79,7 @@
                         android:layout_width="100dp"
                         android:layout_height="100dp"
                         android:layout_centerHorizontal="true"
-                        android:src="@drawable/man"
+                        android:src="@drawable/person_icon"
                         app:civ_border_color="@color/sub_brown"
                         app:civ_border_width="2dp" />
 

@@ -83,7 +83,7 @@
                             android:layout_below="@id/coffeeName"
                             android:layout_marginStart="10dp"
                             android:fontFamily="@font/metropolis_regular"
-                            android:text="Rs.120"
+                            android:text="£2.6"
                             android:textColor="@color/black"
                             android:textSize="20sp" />
 
@@ -136,7 +136,7 @@
                                     android:textColor="@color/black" />
 
                                 <ImageView
-                                    android:id="@+id/sugarTypeIv"
+                                    android:id="@+id/sugar"
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:layout_marginStart="5dp"
@@ -147,7 +147,7 @@
 
 
                             <LinearLayout
-                                android:id="@+id/additionsLL"
+                                android:id="@+id/additions"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:gravity="center"
@@ -168,7 +168,7 @@
                                     android:layout_marginStart="5dp"
                                     android:background="@android:color/transparent"
                                     android:padding="5dp"
-                                    android:src="@drawable/addition_cream_tint" />
+                                    android:src="@drawable/add_cream" />
 
 
                             </LinearLayout>

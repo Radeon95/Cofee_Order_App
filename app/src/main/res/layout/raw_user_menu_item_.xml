@@ -35,7 +35,7 @@
                     android:layout_height="150dp"
                     android:adjustViewBounds="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/bg"
+                    android:src="@drawable/bkg"
                     app:riv_corner_radius="10dp" />
 
                 <ImageView
@@ -73,7 +73,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
                     android:fontFamily="@font/metropolis_regular"
-                    android:text="Rs.100"
+                    android:text="£ 4.86"
                     android:layout_marginBottom="5dp"
                     android:textColor="@color/black" />
 

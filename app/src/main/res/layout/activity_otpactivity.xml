@@ -7,57 +7,24 @@
     android:layout_height="match_parent"
     tools:context=".OTPActivity">
 
-    <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        >
 
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="C"
-            android:fontFamily="@font/baloo"
-            android:textColor="@color/brown"
-            android:textSize="100sp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="O"
-            android:fontFamily="@font/baloo"
-            android:textColor="@color/sub_brown"
-            android:textSize="100sp"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"/>
-
-
-    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linear1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="-50dp"
-        android:layout_below="@id/linear"
+        android:layout_marginTop="50dp"
+
         >
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="D"
-            android:fontFamily="@font/baloo"
-            android:textColor="@color/sub_brown"
-            android:textSize="100sp" />
+
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="E"
+            android:text="CODE"
             android:fontFamily="@font/baloo"
             android:textColor="@color/brown"
             android:textSize="100sp"
@@ -87,7 +54,6 @@
         android:layout_below="@id/verification"
         android:gravity="center"
         android:padding="20dp"
-        android:text="Enter The OTP Which You Recieved"
         android:textAlignment="center"
         android:textColor="#6e6e6e"
         android:textSize="15sp"
@@ -211,7 +177,7 @@
             android:id="@+id/changenumber"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Didn't Receive the OTP? "
+            android:text="Didn't Receive the Code? "
             android:textColor="@color/sub_brown"
             android:textSize="15sp"
             android:gravity="center"/>

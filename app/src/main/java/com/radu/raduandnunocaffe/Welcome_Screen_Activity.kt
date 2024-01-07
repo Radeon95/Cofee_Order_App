@@ -71,7 +71,7 @@ class Welcome_Screen_Activity : AppCompatActivity() {
             } catch (e: ApiException) {
                 Toast.makeText(this@Welcome_Screen_Activity, "" + e.message, Toast.LENGTH_SHORT)
                     .show()
-                Log.d("GOOGLEFAILED", e.message!!)
+                Log.d("GOOGLE FAILED", e.message!!)
                 // Google Sign In failed, update UI appropriately
             }
         }

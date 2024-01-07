@@ -12,7 +12,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/brown"
+        android:background="@color/view_color"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
         app:title="">
 
@@ -25,7 +25,7 @@
             android:fontFamily="@font/metropolis_regular"
             android:gravity="center"
             android:text="Coffee Name"
-            android:textColor="@color/sub_brown"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -37,7 +37,7 @@
         android:layout_width="match_parent"
         android:layout_height="183dp"
         android:layout_below="@id/toolbar"
-        android:background="@drawable/new_detail_bg">
+        android:background="@drawable/bkg">
 
         <ImageView
             android:id="@+id/CoffeeImage"
@@ -114,8 +114,8 @@
             android:layout_marginTop="5dp"
             android:layout_toStartOf="@id/countLL"
             android:fontFamily="@font/metropolis_regular"
-            android:text="Rs.1200"
-            android:textColor="@color/brown"
+            android:text="£ 4.86"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -441,8 +441,8 @@
             android:layout_toStartOf="@id/purchaseBtn"
             android:fontFamily="@font/metropolis_regular"
             android:gravity="start"
-            android:text="Rs.1200"
-            android:textColor="@color/sub_brown"
+            android:text="£ 4.86"
+            android:textColor="@color/black"
             android:textSize="28dp"
             android:textStyle="bold" />
 
@@ -458,11 +458,11 @@
             android:background="@drawable/button_background"
             android:drawableStart="@drawable/ic_cart"
             android:drawablePadding="15dp"
-            android:drawableTint="@color/white"
+            android:drawableTint="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:padding="10dp"
             android:text="PURCHASE"
-            android:textColor="@color/white" />
+            android:textColor="@color/black" />
 
 
     </RelativeLayout>

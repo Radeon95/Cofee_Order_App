@@ -33,7 +33,7 @@ class ShowOrderDetailsAdapter(
         val timestamp = cartItemsModel.timeStamp
         val uid = cartItemsModel.uid
         holder.coffeeName.text = coffeeName
-        holder.itemPrice.text = "Rs. $finalPrice ($quantity)"
+        holder.itemPrice.text = "£ . $finalPrice ($quantity)"
         if (isCustomizeAvailable == "true") {
             val selectedSize = cartItemsModel.selectedSize
             val selectedSugar = cartItemsModel.selectedSugar
@@ -65,9 +65,9 @@ class ShowOrderDetailsAdapter(
             } else {
                 holder.additionsLL.visibility = View.VISIBLE
                 if (selectedAdditions == "cream") {
-                    holder.additionsIv.setImageResource(R.drawable.addition_cream_tint)
+                    holder.additionsIv.setImageResource(R.drawable.add_cream)
                 } else if (selectedAdditions == "sticker") {
-                    holder.additionsIv.setImageResource(R.drawable.addition_ice_tint)
+                    holder.additionsIv.setImageResource(R.drawable.add_ice)
                 } else {
                 }
             }
@@ -104,10 +104,10 @@ class ShowOrderDetailsAdapter(
             customizeItemsLL = itemView.findViewById(R.id.customizeItemsLL)
             CoffeeImage = itemView.findViewById(R.id.CoffeeImage)
             sizeIv = itemView.findViewById(R.id.sizeIv)
-            sugarTypeIv = itemView.findViewById(R.id.sugarTypeIv)
+            sugarTypeIv = itemView.findViewById(R.id.sugar)
             additionsIv = itemView.findViewById(R.id.additionsIv)
             cardBackground = itemView.findViewById(R.id.cardBackground)
-            additionsLL = itemView.findViewById(R.id.additionsLL)
+            additionsLL = itemView.findViewById(R.id.additions)
         }
     }
 }

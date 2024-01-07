@@ -84,7 +84,7 @@ class ProfileFragment() : Fragment() {
             } else if (number.length < 10) {
                 Toast.makeText(context, "Please Enter Correct Number", Toast.LENGTH_SHORT).show()
             } else {
-                progressDialog!!.setMessage("Sending OTP.....")
+                progressDialog!!.setMessage("Sending CODE.....")
                 progressDialog!!.show()
                 phoneNumber = countryCode + number
                 val options = PhoneAuthOptions.newBuilder(mAuth!!).setPhoneNumber(
@@ -320,10 +320,10 @@ class ProfileFragment() : Fragment() {
                     binding!!.addressEt.setText(address)
                 }
                 try {
-                    Picasso.get().load(profile_pic).placeholder(R.drawable.man)
+                    Picasso.get().load(profile_pic).placeholder(R.drawable.person_icon)
                         .into(binding!!.profileIv)
                 } catch (e: Exception) {
-                    binding!!.profileIv.setImageResource(R.drawable.man)
+                    binding!!.profileIv.setImageResource(R.drawable.person_icon)
                 }
                 if (snapshot.exists()) {
                     try {

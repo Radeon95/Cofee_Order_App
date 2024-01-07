@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/brown"
+    android:background="@color/view_color"
     tools:context=".RegisterActivity">
 
     <RelativeLayout
@@ -43,7 +43,7 @@
                 android:layout_marginTop="5dp"
                 android:layout_marginEnd="5dp"
                 android:scaleType="fitEnd"
-                android:src="@drawable/logo" />
+                android:src="@drawable/log" />
 
 
         </RelativeLayout>
@@ -61,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
                 app:riv_corner_radius="15dp"
-                android:src="@drawable/background_bg" />
+                android:src="@drawable/bkg" />
 
             <TextView
                 android:id="@+id/welcomeTv"
@@ -71,7 +71,7 @@
                 android:layout_marginTop="40dp"
                 android:fontFamily="@font/rubik_bold"
                 android:text="Welcome"
-                android:textColor="@color/brown"
+                android:textColor="@color/black"
                 android:textSize="26sp" />
 
             <TextView
@@ -81,8 +81,8 @@
                 android:layout_below="@id/welcomeTv"
                 android:layout_marginStart="20dp"
                 android:fontFamily="@font/rubik_regular"
-                android:text="Hello there, sign up to continue!"
-                android:textColor="@color/brown"
+                android:text="Hello, sign up to continue!"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
 
             <RelativeLayout
@@ -164,7 +164,7 @@
                     android:background="@drawable/edittext_bg"
                     android:backgroundTint="@color/white"
                     android:drawableRight="@drawable/ic_baseline_visibility_off_24"
-                    android:drawableTint="@color/brown"
+                    android:drawableTint="@color/black"
                     android:hint="Enter Password"
                     android:inputType="textPassword"
                     android:longClickable="false"
@@ -205,7 +205,7 @@
                         android:layout_marginStart="23dp"
                         android:fontFamily="@font/rubik_regular"
                         android:text="Do you have an account?"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textSize="14sp" />
 
                     <TextView
@@ -216,7 +216,7 @@
                         android:layout_marginEnd="20dp"
                         android:fontFamily="sans-serif-black"
                         android:text="Sign in"
-                        android:textColor="@color/brown"
+                        android:textColor="@color/black"
                         android:textStyle="bold"
                         android:textSize="14sp" />
 
@@ -241,12 +241,12 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/logo"/>
+            android:src="@drawable/log"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="COFFEE HUB"
+            android:text="COFFEE PLACE"
             android:textColor="@color/brown"
             android:singleLine="true"
             android:textSize="14sp"

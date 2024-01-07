@@ -11,7 +11,7 @@
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="@color/brown"
+        android:background="@color/background"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
         app:title="">
 
@@ -36,7 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="183dp"
         android:layout_below="@id/toolbar"
-        android:background="@drawable/new_detail_bg">
+        android:background="@drawable/bkg">
 
         <ImageView
             android:id="@+id/CoffeeImage"
@@ -113,8 +113,8 @@
             android:layout_marginTop="5dp"
             android:layout_toStartOf="@id/countLL"
             android:fontFamily="@font/metropolis_regular"
-            android:text="Rs.1200"
-            android:textColor="@color/brown"
+            android:text="£4.3"
+            android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -342,8 +342,8 @@
 
                         <RadioButton
                             android:id="@+id/additionCreamRB"
-                            android:layout_width="25dp"
-                            android:layout_height="21dp"
+                            android:layout_width="21dp"
+                            android:layout_height="25dp"
                             android:layout_gravity="center"
                             android:background="@drawable/radio_selector_addition_cream"
                             android:button="@android:color/transparent"
@@ -388,7 +388,7 @@
                     android:layout_marginTop="20dp"
                     android:fontFamily="@font/metropolis_regular"
                     android:text="Total:"
-                    android:textColor="@color/brown"
+                    android:textColor="@color/black"
                     android:textSize="28dp"
                     android:textStyle="bold" />
 
@@ -403,7 +403,7 @@
                     android:layout_toEndOf="@id/totalTv"
                     android:fontFamily="@font/metropolis_regular"
                     android:gravity="end"
-                    android:text="Rs.1200"
+                    android:text="£4.3"
                     android:textColor="@color/sub_brown"
                     android:textSize="28dp"
                     android:textStyle="bold" />
