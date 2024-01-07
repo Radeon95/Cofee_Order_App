@@ -55,7 +55,7 @@ class Welcome_Screen_Activity : AppCompatActivity() {
         }
         binding!!.googleBtn.setOnClickListener {
             val signInIntent = mGoogleSignInClient?.getSignInIntent()
-            startActivityForResult(signInIntent, RC_SIGN_IN)
+            startActivityForResult(signInIntent!!, RC_SIGN_IN)
         }
     }
 
